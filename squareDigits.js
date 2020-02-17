@@ -7,3 +7,5 @@ function squareDigits(num){
   });
   return(Number(n.join('')));
 }
+
+console.log(squareDigits(9119));
