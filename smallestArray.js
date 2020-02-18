@@ -4,17 +4,24 @@
 function findSmallestInt(args) {
     let small = args[0];
     for (let i = 0; i < args.length; i++) {
-        if (args[i] < small) {
-            small = args[i];
+        i
+        function findSmallestInt2(args) {
+            if (args[i] < small) {
+                small = args[i];
+            }
         }
-    }
-    return small;
-};
-
+        return small;
+    };
+}
 
 function findSmallestInt2(args) {
     return args.sort(function (a, b) {
-        return a - b}
-        )[0];
+        return a - b;
+    })[0];
 };
-console.log(findSmallestInt2([78, 56, 232, 12, 8]));
+
+function findSmallestInt3(args) {
+    return Math.min(...args);
+}
+
+console.log(findSmallestInt3([78, 56, 232, 12, 8]));
